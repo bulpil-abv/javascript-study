@@ -17,17 +17,24 @@ for (let truck of trucks) {
 
 console.log(0.4 + 0.2)
 console.log(parseFloat((0.4 + 0.2).toFixed(1)))
-console.log(+(0.4+0.2).toFixed(1))
+console.log(+(0.4 + 0.2).toFixed(1))
 
 
 //Strings
 const name = 'Fluf'
 const age = 43
 
-function getAge(){
+function getAge() {
     return age
 }
 
 const output = `Hello, my name is ${name} and my age is ${getAge()}.`
 console.log(output)
-console.log(`My name is ${name.length} letters long.` )
+console.log(`My name is ${name.length} letters long.`)
+
+//Arrow function
+const arrow = () => {
+    console.log('Hello -', name)
+}
+
+arrow()
