@@ -33,8 +33,21 @@ console.log(output)
 console.log(`My name is ${name.length} letters long.`)
 
 //Arrow function
-const arrow = () => {
+const arrow = (name) => {
     console.log('Hello -', name)
 }
 
-arrow()
+arrow('Flef')
+
+const sum = (a, b) => a + b
+console.log(sum(1, 41))
+
+function sumAll(...All) {
+    res = 0
+    for (let num of All) {
+        res +=num
+    }
+    return res
+}
+
+console.log(sumAll(1, 3, 5, 7, 9))
